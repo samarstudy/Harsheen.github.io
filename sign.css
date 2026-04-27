@@ -81,7 +81,7 @@ body, html {
 
     display: flex;                                                         /*layout links horizontally*/
     align-items: center;                                                   /*vertically center items*/
-    gap: 4rem;                                                             /*spacing between links*/
+    gap: 64px;                                                             /*spacing between links*/
     font-size: 30px;                                                       /*navbar font size*/
     width: 100%;                                                           /*navbar spans full width*/
 
@@ -144,7 +144,7 @@ body, html {
 .heading {
     text-align: center;                                                      /*center heading text*/
     color: black;                                                        /*heading color*/
-    font-size: 4rem;                                                         /*heading size*/
+    font-size: 64px;                                                         /*heading size*/
     transition: color 0.4s ease;
     transform: translateY(-110px);
 }
