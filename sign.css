@@ -10,7 +10,6 @@ body, html {
     /* Dark base so the cyan/orange pop */
     background-color: #001a1a; 
     scroll-behavior: smooth;
-    font-family: sans-serif;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     color: white;
 }
