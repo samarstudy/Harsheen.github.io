@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #211815;
+}
+
+.scroll {
+  height: 1700vh;
+}
+
+/* Logos */
+.logo {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  height: 76px;
+}
+
+.logo_2 {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  height: 38px;
+}
+
+/* Heading */
+.heading {
+  position: absolute;
+  top: 25px;
+  left: 90px;
+  color: white;
+}
+
+.heading h2 {
+  text-align: center;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  left: 40px;
+  top: 360px;
+  bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+}
+
+
+.line {
+  width: 20px;
+  height: 3px;
+  background: white;
+  margin-bottom: 15px;     
+  transform-origin: left center;
+  transition: transform 0.15s ease-out;
+}
+
+/* BOOK BASE */
+.book {
+  width: 1000px;
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 3px 4px 15px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+
+  transition:
+    transform 0.4s cubic-bezier(.2,.8,.2,1),
+    box-shadow 0.4s cubic-bezier(.2,.8,.2,1),
+    filter 0.4s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.book:hover {
+  transform: translate(-50%, -60%) scale(1.05) translateZ(60px);
+  transition: transform 0.25s ease-in;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+  filter: brightness(1.1);
+  z-index: 10;
+}
+
+
+/* Individual books */
+.book-1 { top: 50%; background: rgb(214,185,111); }
+.book-2 { top: 75%; background: rgb(111,188,214); }
+.book-3 { top: 100%; background: rgba(145,245,74,0.73); }
+.book-4 { top: 125%; background: rgb(236,134,194); }
+
+/* Author */
+.author {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  font-weight: bold;
+  color: #211815;
+  font-family: Arial, sans-serif;
+}
+
+/* Title */
+.book_heading {
+  font-size: 20px;
+  font-weight: bold;
+  color: #211815;
+  font-family: Georgia, serif;
+  text-align: center;
+}
